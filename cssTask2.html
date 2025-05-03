@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<style>
+     body {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding-top: 50px;
+    }
+    h3{
+        align-items:center;
+    }
+    .vertical-nav{
+        width:150px;
+        border: 1px solid black;
+    }
+    .vertical-nav a{
+        background-color: lightblue;
+        color:blue;
+        padding:20px;
+        display:block;
+    }
+    .vertical-nav a:first-child{
+        background-color: orange;
+        color:white;
+        font-weight: bold;
+
+    }
+    .horizontal-nav {
+      border: 1px solid black;
+      background-color: #e6e6e6;
+      width: fit-content;
+      margin:0 auto;
+      display:flex;
+    }
+
+    .horizontal-nav a {
+      display: block;
+      color: blue;
+      text-align: center;
+      padding: 10px 20px;
+      border-right: 1px solid gray;
+    }
+
+    .horizontal-nav a:first-child {
+      background-color: gray;
+      color: white;
+      font-weight: bold;
+    }
+
+    .horizontal-nav:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+</style>
+<body>
+    <div class="Vertical-bar">
+        <h3>Vertical Navigation Bar</h3>
+        <div class="vertical-nav">
+            <a href="#">Home</a>
+            <a href="#">Java</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+
+    <div class="Horizontal-bar">
+        <h3>Horizontal Navigation Bar</h3>
+        <div class="horizontal-nav">
+            <a href="#">Home</a>
+            <a href="#">Java</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+        </div>
+    </div>
+</body>
+</html>

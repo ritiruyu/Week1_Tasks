@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+<style>
+    .title{
+        text-align: center;
+        font-size: 30px;
+        color:blue;
+
+    }
+    .reg-form{
+        border:1px solid black;
+        width:fit-content;
+        margin: 0 auto;
+        padding:10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    textarea,select{
+        width:100%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="checkbox"],input[type="radio"]{
+        margin-right: 5px;
+        margin-bottom: 5px;;
+        border:1px solid #ccc;
+    }
+    .language, .gender{
+        border:1px solid #ccc;
+        margin-top:5px;
+        margin-bottom: 5px;;
+    }
+    p.website{
+        text-align: right;
+        border:1px solid #ccc;
+    }
+    .button-submit{
+        text-align: center;
+    }
+</style>
+<body>
+    <p class="title"><b>Registration Form</b></p>
+    <div class="reg-form">
+    <form action="">
+        <label for="First Name">First Name</label>
+        <input type="text"><br>
+        <label for="Last Name">Last Name</label>
+        <input type="text"><br>
+        <label for="Email">Email</label>
+        <input type="email"><br>
+        <label for="First Name">First Name</label>
+        <input type="text"><br>
+        <label for="Password">Password</label>
+        <input type="password"><br>
+        <label for="Re-Enter Password">Re-Enter Password</label>
+        <input type="password"><br>
+
+        <div class="gender">
+        <label for="Gender">Gender</label>
+        <input type="radio" value="Male">
+        <label for="gender1">Male</label>
+        <input type="radio" value="Female">
+        <label for="gender2">Female</label><br>
+        </div>  
+
+        <label for="Age">Age</label>
+        <input type="number"><br>
+        <label for="Phone Number">Phone Number</label>
+        <input type="number"><br>
+
+        <label for="Address">Address</label>
+        <textarea id="" name="Address" cols="30" rows="5"></textarea><br>
+        <label for="State">State</label>
+
+        <input type="text"><br>
+        <label for="Country">Country</label>
+        <select name="Country" id="country" placeholder="Choose your Country">
+            <option value="India">India</option>
+            <option value="America">America</option>
+            <option value="China">China</option>
+            <option value="United Kingdom">United Kingdom</option>
+        </select><br>
+
+        <div class="language">
+        <label for="languages">Languages Known</label>
+        <input type="checkbox" value="English">
+        <label for="lang1">English</label>
+        <input type="checkbox" value="Kannada">
+        <label for="lang2">Kannada</label>
+        <input type="checkbox" value="Hindi">
+        <label for="lang3">Hindi</label>
+        <input type="checkbox" value="Telugu">
+        <label for="lang4">Telugu</label><br>
+        </div>
+
+        <input type="checkbox" value="declaration">
+        <label for="declaration">Hereby I declare all given details are true</label>
+
+        <p class="website">Log in to <a href="https://www.m.acharya.ac.in/" target="_blank">Acharya</a> website</p>
+        <div class="button-submit">
+        <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+</body>
+</html>
